@@ -98,17 +98,48 @@ https://docs.google.com/document/d/1iQyP3XjMiDiYE6YibP-QObtVZ3zyANLNDnvgOBPmnQc/
 ## Running tests
 
 nvm install v22.11.0
+
 nvm use
+
 npm install
 
-rm -rf .openzeppelin .vscode artifacts cache 
+rm -rf .openzeppelin .vscode artifacts cache
+
 export PRIVATEKEY=<add private key here>
+
 node clean.js
+
 node compile.js --env qanet
+
 node run.js scripts/blackhole-scripts/deployBlack.js --network fuji --env qanet --version v1
+
 node run.js scripts/blackhole-scripts/mintBlackhole.js --network fuji --env qanet --version v1
+
 node run.js scripts/deployment-flows/scripts/contract-deployments/deploy-contracts.js --network fuji --env qanet --version v1
-npx hardhat run scripts/deployment-flows/scripts/contract-deployments/deploy-cl-dependency.js –network fuji
+
+node run.js scripts/deployment-flows/scripts/contract-deployments/deploy-cl-dependency.js -–network fuji -–env qanet -–version v1
+
+node run.js scripts/deployment-flows/scripts/contract-deployments/deploy-avm.js -–network fuji -–env qanet -–version v1
+
+Currently in our deployment system we’re supporting 3 env: Dev, QA, Testnet. Version should be greater than current version.
+
+### Epoch flip script 
+Pre epoch flip 
+Both of the above are to be referred from EpochController.sol 
+Epoch Flip: if checkUpkeep returns true -- that is after epoch duration ends, then we have to execute performUpkeep
+Pre Epoch Flip: if checkUpPrekeep returns true -- that is 1 hour before epoch duration ending, then we have to execute performPreUpkeep
+
+### Avm descriptor 
+	 Voting for AVM locks happens within the last hour before epoch ends 
+	 Steps followed are in succession:
+- Reset all locks - using performLockAction – isVote as false – in a paginated manner
+- topNPools and voteWeights being set as an array of max size as topN based off of an algorithm on our backend whose inputs are the rewards on gauges and the votes made by non AVM locks ( for setting top n pools use SetterTopNPoolsStrategy.sol and similarly for vote weights use SetterVoteWeightStrategy.sol)
+- After which AVM executes voting for AVM locks by executing performLockAction – with isVote as true, in a paginated manner.
+- 
+
+### CL Pool: 
+https://github.com/BlackHoleDEX/Algebra/tree/bh_ideation
+This is the repo we’re using for Algebra CL integration. It has a deployall.js file which needs to run to deploy Algebra Contracts. Deployed addresses will be in deploys.json file. It needs to be copied to algebra-addresses.js file in this repo.
 
 Currently in our deployment system we’re supporting 3 env: Dev, QA, Testnet. Version should be greater than current version. 
 
