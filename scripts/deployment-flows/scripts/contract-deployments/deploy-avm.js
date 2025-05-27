@@ -150,17 +150,17 @@ async function main () {
     await setVoteWgtStrategyInAVM(deployedAVMAddress, deployedVoteWeightStrategyAddress);
     console.log("done setting avm in vote wgt")
 
-    await setTopNInAVM("5", autoVotingEscrowManagerAddress)
+    await setTopNInAVM("5", deployedAVMAddress)
 
-    await setAVMInVotingEscrow(votingEscrowAddress, autoVotingEscrowManagerAddress);
+    await setAVMInVotingEscrow(votingEscrowAddress, deployedAVMAddress);
     console.log("done setting avm in voting escrow")
     await setAVMInVoter(voterV3Address);
     console.log("done setting avm in voter")
     // rewards distributor and gauge manager
-    await setAVMInRewardsDistributor(autoVotingEscrowManagerAddress, rewardsDistributorAddress)
+    await setAVMInRewardsDistributor(deployedAVMAddress, rewardsDistributorAddress)
     console.log("RFWDSXfdsxz")
-    await setAVMInGaugeManager(autoVotingEscrowManagerAddress, gaugeManagerAddress)
-    await setAVMInVeNFTAPI(veNFTAPIAddress, autoVotingEscrowManagerAddress);
+    await setAVMInGaugeManager(deployedAVMAddress, gaugeManagerAddress)
+    await setAVMInVeNFTAPI(veNFTAPIAddress, deployedAVMAddress);
     console.log("done setting avm in ve nft api")
 
     generateConstantFile("AutoVotingEscrow", "")
