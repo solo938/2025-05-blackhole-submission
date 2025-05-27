@@ -1,4 +1,50 @@
 
+# Audit 507 audit details
+- Total Prize Pool: $28,000 in USDC
+  - HM awards: up to $19,950 in USDC
+    - If no valid Highs or Mediums are found, the HM pool is $0 
+  - QA awards: $800 in USDC
+  - Judge awards: $2,500 in USDC
+  - Scout awards: $500 in USDC
+  - Mitigation Review: $4,250 in USDC
+- [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
+- Starts May 28, 2025 20:00 UTC 
+- Ends June 9, 2025 20:00 UTC 
+
+**Note re: risk level upgrades/downgrades**
+
+Two important notes about judging phase risk adjustments: 
+- High- or Medium-risk submissions downgraded to Low-risk (QA) will be ineligible for awards.
+- Upgrading a Low-risk finding from a QA report to a Medium- or High-risk finding is not supported.
+
+As such, wardens are encouraged to select the appropriate risk level carefully during the submission phase.
+
+## Automated Findings / Publicly Known Issues
+
+The 4naly3er report can be found [here](https://github.com/code-423n4/2025-05-audit-507/blob/main/4naly3er-report.md).
+
+
+
+_Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
+
+No known issues
+
+✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
+
+# Overview
+
+[ ⭐️ SPONSORS: add info here ]
+
+## Links
+
+- **Previous audits:**  https://drive.google.com/file/d/1e-ePA3ZofuJ4rjwoADkaBqvqK3Pnyi49/view
+  - ✅ SCOUTS: If there are multiple report links, please format them in a list.
+- **Documentation:** https://docs.google.com/document/d/1SOG2RGIin-EmAKZtnIXppRX9GmHWBC5ucEodeLG8kzU/edit?tab=t.0
+  - Contract Diff for Audits here: https://docs.google.com/document/d/1rw7sW0yc7PqPV2MtMX6zpKIvsT9PCPyCoSec1zYuP_s/edit?tab=t.m41e7w3joszr
+- **Website:** 🐺 EM: add a link to the sponsor's website
+- **X/Twitter:** 🐺 EM: add a link to the sponsor's Twitter
+
+---
 
 # Scope
 
@@ -139,3 +185,7 @@
 | ./envFiles/testnet/BlackTimeLibrary.sol |
 | Totals: 3 |
 
+## Miscellaneous
+Employees of Audit 507 and employees' family members are ineligible to participate in this audit.
+
+Code4rena's rules cannot be overridden by the contents of this README. In case of doubt, please check with C4 staff.
