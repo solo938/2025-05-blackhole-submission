@@ -1,5 +1,5 @@
 
-# Audit 507 audit details
+# Blackhole audit details
 - Total Prize Pool: $28,000 in USDC
   - HM awards: up to $19,950 in USDC
     - If no valid Highs or Mediums are found, the HM pool is $0 
@@ -21,7 +21,7 @@ As such, wardens are encouraged to select the appropriate risk level carefully d
 
 ## Automated Findings / Publicly Known Issues
 
-The 4naly3er report can be found [here](https://github.com/code-423n4/2025-05-audit-507/blob/main/4naly3er-report.md).
+The 4naly3er report can be found [here](https://github.com/code-423n4/2025-05-blackhole/blob/main/4naly3er-report.md).
 
 
 
@@ -48,7 +48,7 @@ No known issues
 
 # Scope
 
-*See [scope.txt](https://github.com/code-423n4/2025-05-audit-507/blob/main/scope.txt)*
+*See [scope.txt](https://github.com/code-423n4/2025-05-blackhole/blob/main/scope.txt)*
 
 ### Files in scope
 
@@ -176,7 +176,7 @@ No known issues
 
 ### Files out of scope
 
-*See [out_of_scope.txt](https://github.com/code-423n4/2025-05-audit-507/blob/main/out_of_scope.txt)*
+*See [out_of_scope.txt](https://github.com/code-423n4/2025-05-blackhole/blob/main/out_of_scope.txt)*
 
 | File         |
 | ------------ |
@@ -186,6 +186,6 @@ No known issues
 | Totals: 3 |
 
 ## Miscellaneous
-Employees of Audit 507 and employees' family members are ineligible to participate in this audit.
+Employees of Blackhole and employees' family members are ineligible to participate in this audit.
 
 Code4rena's rules cannot be overridden by the contents of this README. In case of doubt, please check with C4 staff.
