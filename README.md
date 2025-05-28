@@ -1,11 +1,11 @@
 # Blackhole audit details
-* Total Prize Pool: $28, 000 in USDC
-  + HM awards: up to $19, 950 in USDC
+* Total Prize Pool: $28,000 in USDC
+  + HM awards: up to $19,950 in USDC
     - If no valid Highs or Mediums are found, the HM pool is $0 
   + QA awards: $800 in USDC
   + Judge awards: $2,500 in USDC
   + Scout awards: $500 in USDC
-  + Mitigation Review: $4, 250 in USDC
+  + Mitigation Review: $4,250 in USDC
 * [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 * Starts May 28, 2025 20:00 UTC 
 * Ends June 9, 2025 20:00 UTC 
