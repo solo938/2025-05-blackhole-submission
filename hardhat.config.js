@@ -28,7 +28,7 @@ module.exports = {
       url: "https://api.avax.network/ext/bc/C/rpc", // Mainnet RPC
       chainId: 43114,
       accounts: [`0x${process.env.PRIVATEKEY}`],
-      gas: 8000000,
+     gas: 8000000,
     },
     fuji: {
       url: "https://api.avax-test.network/ext/bc/C/rpc", // Fuji Testnet RPC
